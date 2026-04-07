@@ -1,0 +1,132 @@
+
+.login-background, .signup-background {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(120deg, rgba(0, 0, 0, 0.6), rgba(25, 25, 25, 0.8)),
+    url('https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1920&q=80')
+    center/cover no-repeat;
+  backdrop-filter: blur(8px);
+  padding: 20px;
+}
+
+.login-container, .signup-container {
+  width: 380px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 18px;
+  box-shadow: 0 12px 45px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== HEADER SECTION ===== */
+.login-header, .signup-header {
+  text-align: center;
+  padding: 20px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: white;
+}
+
+.citizen-header {
+  background: linear-gradient(90deg, #f1c40f, #d4ac0d);
+}
+.politician-header {
+  background: linear-gradient(90deg, #e74c3c, #c0392b);
+}
+.admin-header {
+  background: linear-gradient(90deg, #2980b9, #1a5276);
+}
+.signup-header {
+  background: linear-gradient(90deg, #3498db, #2c3e50);
+}
+
+/* ===== BODY SECTION ===== */
+.login-body, .signup-body {
+  padding: 25px 30px;
+}
+
+.login-body form, .signup-body form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Input fields */
+input, select {
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1.5px solid #ccc;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+input:focus, select:focus {
+  border-color: #3498db;
+  outline: none;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+/* ===== BUTTONS ===== */
+.btn-login, .btn-signup {
+  background: #3498db;
+  color: white;
+  font-weight: 600;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.btn-login:hover, .btn-signup:hover {
+  background: #2c3e50;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== FOOTER SECTION ===== */
+.login-footer, .signup-footer {
+  text-align: center;
+  padding: 15px 20px 25px;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.link {
+  color: #2980b9;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.link:hover {
+  text-decoration: underline;
+  color: #1f4e79;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 480px) {
+  .login-container, .signup-container {
+    width: 90%;
+  }
+  .login-header, .signup-header {
+    font-size: 1.3rem;
+  }
+  input, select, .btn-login, .btn-signup {
+    font-size: 0.9rem;
+  }
+}
