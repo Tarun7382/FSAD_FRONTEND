@@ -3,7 +3,7 @@ import "./LoginSignup.css";
 import api from "../services/api";
 
 export default function SignUp({ role, onComplete }) {
-  const [username, setUsername] = useState("");
+  const [username, setUsername] = useState(""); //username
   const [password, setPassword] = useState("");
   const [region, setRegion] = useState("");
   const [errors, setErrors] = useState({});
