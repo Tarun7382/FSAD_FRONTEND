@@ -4,7 +4,6 @@ body {
   padding: 0;
   background: #f1f5f9;
 }
-
 .role-selection-page {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
     url("/T.jpg");
