@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const BASE = "http://localhost:8080/api";
+const BASE = "/api";
 
 const STATUS_COLORS = {
   Verified: { bg: "#ecfeff", color: "#0891b2", border: "#a5f3fc" },

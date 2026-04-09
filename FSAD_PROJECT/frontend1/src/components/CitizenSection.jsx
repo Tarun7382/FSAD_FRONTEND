@@ -32,7 +32,7 @@ const labelStyle = {
   color: "#1e293b",
 };
 
-const BASE = "http://localhost:8080/api";
+const BASE = "/api";
 
 export default function CitizenSection({ username }) {
   const [reports,    setReports]    = useState([]);
