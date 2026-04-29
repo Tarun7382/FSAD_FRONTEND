@@ -280,8 +280,11 @@ export default function CitizenSection({ username }) {
                   </p>
                   <p>
                     <b>📌 Status:</b>{" "}
-                    <span style={{ color: getStatusColor(r.status),
-                                   fontWeight: "bold" }}>{r.status}</span>
+                    <b></b>{" "}
+<span style={{ color: getStatusColor(r.status === "Accepted" ? "In Progress" : r.status),
+               fontWeight: "bold" }}>
+  {r.status === "Accepted" ? "In Progress" : r.status}
+</span>
                     {!r.verified && (
                       <span style={{ color: "#94a3b8", fontSize: 13 }}>
                         {" "}(Awaiting verification)
